@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url(/assets/recoleta-font.otf);
+}
+
+* {
+    font-family: 'Recoleta';
+    font-weight: bolder;
+}
+
+body {
+    background-color: gray;
+    cursor: crosshair;
+}
+
+img {
+    border-radius: 50px;
+    background-repeat: space;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+img:hover {
+    border: 3px solid red;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrap {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 3px solid black;
+    background: linear-gradient(rgba(209, 209, 205, 0.5), rgba(194, 194, 194, 0.5))
+}
+
+@media (min-height)
