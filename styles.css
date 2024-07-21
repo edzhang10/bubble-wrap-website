@@ -3,21 +3,25 @@
     src: url(/assets/recoleta-font.otf);
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 * {
     font-family: 'Recoleta';
     font-weight: bolder;
+    cursor: url(/assets/images/cursor.png), auto;
 }
 
 body {
     background-color: gray;
-    cursor: crosshair;
 }
 
 img {
     border-radius: 50px;
-    background-repeat: space;
     border: 3px solid black;
-    margin: 0 auto;
+    margin: 0;
 }
 
 img:hover {
@@ -27,6 +31,13 @@ img:hover {
 .title {
     text-align: center;
     font-size: 80px;
+    animation: fadeIn 1s;
+}
+
+.counter {
+    text-align: center;
+    font-size: 50px;
+    animation: fadeIn 1.5s;
 }
 
 .row {
@@ -36,11 +47,9 @@ img:hover {
 }
 
 .wrap {
-    width: 80%;
+    width: 1100px;
     height: 100%;
     margin: 0 auto;
     border: 3px solid black;
     background: linear-gradient(rgba(209, 209, 205, 0.5), rgba(194, 194, 194, 0.5))
 }
-
-@media (min-height)

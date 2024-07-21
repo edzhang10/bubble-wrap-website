@@ -5,103 +5,108 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <main>
-            <div class="title">Bubble Wrap</div>
+            <div class="title fade">Bubble Wrap</div>
+            <div class="counter fade">bubbles popped: <span id="popped">0</span></div>
+
+            <audio controls hidden src="/assets/pop.mp3" id="pop"></audio>
+
             <div class="wrap">
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" role="button" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
                 <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
-                                <div class="row">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
-                    <img src="assets/images/bubble.png" alt="skibidi">
+                <div class="row">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
+                    <img src="assets/images/bubble.png" id="bubble" class="bubble" onclick="pop()" alt="skibidi">
                 </div>
-                
+                                
             </div>
         </main>
     </body>
